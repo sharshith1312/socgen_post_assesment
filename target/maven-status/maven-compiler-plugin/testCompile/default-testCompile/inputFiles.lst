@@ -1,0 +1,11 @@
+/home/coder/project/src/test/java/com/iiht/training/ratings/testutils/MasterData.java
+/home/coder/project/src/test/java/com/iiht/training/ratings/functional/PoliticalPartyControllerTest.java
+/home/coder/project/src/test/java/com/iiht/training/ratings/exception/PoliticalLeaderExceptionTest.java
+/home/coder/project/src/test/java/com/iiht/training/ratings/exception/DevelopmentExceptionTest.java
+/home/coder/project/src/test/java/com/iiht/training/ratings/functional/PoliticalLeaderControllerTest.java
+/home/coder/project/src/test/java/com/iiht/training/ratings/testutils/TestCaseResultDto.java
+/home/coder/project/src/test/java/com/iiht/training/ratings/testutils/TestResults.java
+/home/coder/project/src/test/java/com/iiht/training/ratings/boundary/BoundaryTest.java
+/home/coder/project/src/test/java/com/iiht/training/ratings/exception/PoliticalPartyExceptionTest.java
+/home/coder/project/src/test/java/com/iiht/training/ratings/testutils/TestUtils.java
+/home/coder/project/src/test/java/com/iiht/training/ratings/functional/DevelopmentControllerTest.java

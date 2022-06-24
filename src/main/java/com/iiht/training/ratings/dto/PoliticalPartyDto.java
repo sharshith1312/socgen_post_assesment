@@ -2,12 +2,19 @@ package com.iiht.training.ratings.dto;
 
 import java.util.Objects;
 
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
+
 public class PoliticalPartyDto {
 
 	private Long politicalPartyId;
-	
+
+	@NotNull
+	@Size(min = 3,max = 100, message = "Political party name should have at least 3 characters and atmost 100 characters")
 	private String partyName;
 	
+	@NotNull
+	@Size(min = 3,max = 100, message = "Political party founder name should have at least 3 characters and atmost 100 characters")
 	private String founderName;
 
 	public Long getPoliticalPartyId() {

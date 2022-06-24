@@ -1,8 +1,15 @@
 package com.iiht.training.ratings.entity;
-
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+@Entity
+@Table(name = "development")
 public class Development {
 
-	
+	@Id
+    @GeneratedValue (strategy=GenerationType.IDENTITY)
 	private Long developmentId;
 	private Long politicalLeaderId;
 	private String title;

@@ -2,14 +2,21 @@ package com.iiht.training.ratings.dto;
 
 import java.util.Objects;
 
-public class PoliticalLeaderDto {
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 
+public class PoliticalLeaderDto {
+	@NotNull
 	private Long politicalLeaderId;
-	
+	@NotNull
 	private Long politicalPartyId;
 	
+	@NotNull
+	@Size(min = 3,max = 100, message = "Political Leader canditate name should have at least 3 characters and atmost 100 characters")
 	private String candidateName;
 	
+	@NotNull
+	@Size(min = 3,max = 100, message = "Political leader candidate state should have at least 3 characters and atmost 100 characters")
 	private String candidateState;
 
 	public Long getPoliticalLeaderId() {

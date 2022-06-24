@@ -2,22 +2,40 @@ package com.iiht.training.ratings.dto;
 
 import java.util.Objects;
 
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
+import javax.validation.constraints.Min;
+import javax.validation.constraints.Max;
 public class DevelopmentDto {
 	
 	private Long developmentId;
-	
+	@NotNull
 	private Long politicalLeaderId;
 	
+	@NotNull
+	@Size(min = 3,max = 100, message = "Title should have at least 3 characters and atmost 100 characters")
 	private String title;
 	
+	@NotNull
+	@Size(min = 3,max = 100, message = "activity should have at least 3 characters and atmost 100 characters")
 	private String activity;
 	
+	@NotNull
+	@Size(min = 3,max = 100, message = "budget should have at least 3 characters and atmost 100 characters")
 	private String budget;
 	
+	@NotNull
+	@Size(min = 3,max = 100, message = "state should have at least 3 characters and atmost 100 characters")
 	private String state;
 	
+	@NotNull
+	@Min(value = 1, message="Activity Month should start with >= 1")
+	@Max(value = 12, message="Activity Month should start with <= 12")
 	private Integer activityMonth;
 	
+	@NotNull
+	@Min(value = 2021, message="Activity Year should start with >= 2021")
+	@Max(value = 2040, message="Activity Year should start with <= 2040")
 	private Integer activityYear;
 
 	public Long getDevelopmentId() {
